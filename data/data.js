@@ -1,51 +1,40 @@
-const myData = [
+const products = [
   {
-    name: "hero Product",
-    detail: "Lorem ipsum dolor sit amet",
-    price: "99",
-    hero: "OMG This just came out today!",
-    image: "http://placehold.it/940x300/999/CCC",
+    id: 1,
+    name: "Chicken Harness and Leash",
+    slug: "chicken-harness-and-leash",
+    image:
+      "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1565295718-41-Z274tCDL.jpg",
+    description:
+      "This leash boasts a a durable, breathable leash that won't hurt your clucking friend.",
+    color: "red",
+    quantity: 4,
+    price: 9,
   },
   {
-    name: "Product 1",
-    detail: "Lorem ipsum dolor sit amet",
-    price: "99",
-    info: "This is the latest and greatest product from Derp corp.",
-    image: "http://placehold.it/300x300/999/CCC",
+    id: 2,
+    name: "The Hen Bag Handbag",
+    slug: "the-hen-bag-handbag",
+    image:
+      "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1571683417-rubber-chicken-purse-1571683378.jpg",
+    description:
+      "Is that the latest Hermès bag straight off the runway? No, it's a rubber chicken purse.",
+    color: "yellow",
+    quantity: 9,
+    price: 24,
   },
   {
-    name: "Product 2",
-    detail: "Lorem ipsum dolor sit amet",
-    price: "99",
-    offer: "BOGOF",
-    image: "http://placehold.it/300x300/999/CCC",
-  },
-  {
-    name: "Product 3",
-    detail: "Lorem ipsum dolor sit amet",
-    price: "99",
-    image: "http://placehold.it/300x300/999/CCC",
-  },
-  {
-    name: "Product 4",
-    detail: "Lorem ipsum dolor sit amet",
-    price: "99",
-    offer: "No srsly GTFO",
-    image: "http://placehold.it/300x300/999/CCC",
-  },
-  {
-    name: "Product 5",
-    detail: "Lorem ipsum dolor sit amet",
-    price: "99",
-    image: "http://placehold.it/300x300/999/CCC",
-  },
-  {
-    name: "Product 6",
-    detail: "Lorem ipsum dolor sit amet",
-    price: "99",
-    info: "This is the latest and greatest product from Derp corp.",
-    offer: "info with offer",
-    image: "http://placehold.it/300x300/999/CCC",
+    id: 3,
+    name: "Pet Chicken Helmet",
+    slug: "pet-chicken-helmet",
+    image:
+      "https://alitools.io/en/showcase/image?url=https%3A%2F%2Fae01.alicdn.com%2Fkf%2FHc9611807ce8e45959f2b83563d341239r.jpg",
+    description:
+      "Prevent the chicken from smash and protect the chicken's head.",
+    color: "green",
+    quantity: 2,
+    price: 2,
   },
 ];
-module.exports = myData;
+
+module.exports = products;

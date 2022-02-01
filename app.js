@@ -1,15 +1,16 @@
 const express = require("express");
-const myData = require("./data/data");
 const app = express();
-const PORT = 8000;
+const productRouter = require("./router/product.router");
+
+app.use(express.json());
 
 app.get("/", (req, res) => {
   res.send("Hello World");
 });
-app.get("/api/products", (req, res) => {
-  res.send(myData);
-});
 
+app.use("/api", productRouter);
+
+const PORT = 8000;
 app.listen(PORT, () => {
   console.log("My first server is running.. ");
 });
